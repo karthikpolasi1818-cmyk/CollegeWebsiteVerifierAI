@@ -1,0 +1,87 @@
+# College Website Verifier AI
+
+An AI-assisted Python tool that discovers, verifies, and enriches official college websites using search, web crawling, and rule-based verification.
+
+## Features
+
+- 🔍 Searches official college websites using DuckDuckGo
+- 🌐 Crawls websites using Playwright
+- ✅ Rule-based website verification
+- 📧 Extracts official email addresses
+- ☎️ Extracts phone numbers
+- 📍 Extracts addresses
+- 🔗 Collects official social media links
+- 📄 Detects important pages (Contact, About, Admission, Faculty, etc.)
+- 📊 Saves results directly to Excel
+- 💾 Automatic checkpointing and resume support
+
+## Project Structure
+
+```
+CollegeWebsiteVerifierAI/
+│
+├── crawler/
+├── exporter/
+├── search/
+├── verifier/
+├── utils/
+├── data/
+├── output/
+├── main.py
+├── config.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+## Installation
+
+```bash
+git clone https://github.com/karthikpolasi1818-cmyk/CollegeWebsiteVerifierAI.git
+cd CollegeWebsiteVerifierAI
+
+python -m venv .venv
+
+# Windows
+.venv\Scripts\activate
+
+pip install -r requirements.txt
+```
+
+## Run
+
+```bash
+python main.py
+```
+
+## Technologies
+
+- Python
+- Playwright
+- BeautifulSoup
+- Pandas
+- RapidFuzz
+- DuckDuckGo Search
+
+## Output
+
+The scraper generates:
+
+- Official Website
+- Verification Confidence
+- Contact Information
+- Social Links
+- Important Pages
+- Excel Report
+
+## Future Improvements
+
+- Google Search API
+- Brave Search
+- Parallel Crawling
+- AI-based Website Verification
+- Multi-threaded Processing
+
+## Author
+
+**Karthik Polasi**
